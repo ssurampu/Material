@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:focusable="true"
+    android:layout_gravity="center"
+    android:background="@android:color/transparent">
+
+    <ImageView
+        android:id="@+id/widget_image1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@+id/imgwidget1"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginLeft="2dp"
+        android:layout_gravity="center"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/widget_text1"
+        android:layout_gravity="center"
+        android:text="Notes"
+        android:textStyle="italic"
+        android:textAllCaps="true"
+        android:textSize="@dimen/abc_text_size_small_material"
+        />
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/widget_text2"
+       android:layout_gravity="center"
+       android:text="SMS"
+       android:textStyle="italic"
+       android:textAllCaps="true"
+       android:textSize="@dimen/abc_text_size_small_material"
+       />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/widget_text3"
+        android:layout_gravity="center"
+        android:text="Clip"
+        android:textStyle="italic"
+        android:textAllCaps="true"
+        android:textSize="@dimen/abc_text_size_small_material"
+        />
+
+</LinearLayout>

@@ -5,20 +5,53 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="fill_parent"
         android:layout_height="match_parent"
-        tools:context="com.android.material.MainActivity">
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/container_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar" />
+        </LinearLayout>
 
-        <include
-            android:id="@+id/app_bar"
-            layout="@layout/activity_main_appbar" />
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
 
-    </RelativeLayout>
+            <FrameLayout
+                android:id="@+id/container_body"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                 android:layout_weight="1" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@id/container_body"
+                android:layout_gravity="bottom|right"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="16dp"
+                app:fabSize="normal"
+                android:src="@drawable/ic_add_white_24dp"
+                app:backgroundTint="@color/colorPrimaryDark"
+                app:rippleColor="#F06292"
+                app:elevation="6dp"
+                app:pressedTranslationZ="12dp"/>
+
+        </FrameLayout>
+
+
+    </LinearLayout>
 
     <fragment
         android:id="@+id/fragment_navigation_drawer"
-        android:name="com.android.material.NavigationDrawerFragment"
+        android:name="com.srids.tagit.NavigationDrawerFragment"
         android:layout_width="280dp"
         android:layout_height="match_parent"
         android:layout_gravity="start"

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@android:style/Theme.Dialog"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/smssaver_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose option"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:gravity="center"
+        android:textSize="@dimen/abc_text_size_medium_material"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/smssaver_list"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/smssaver_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:textSize="@dimen/abc_text_size_small_material"/>
+
+    <LinearLayout
+        android:id="@+id/ll_buttons"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/smssave_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ok"
+            android:layout_gravity="center_vertical" />
+
+        <Button
+            android:id="@+id/smssave_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,36 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.material" >
+    package="com.srids.tagit"
+    android:versionCode="4"
+    android:versionName="1.2">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <application
         android:allowBackup="true"
+        android:fullBackupContent="@xml/mybackupscheme"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/*" />
+                <data android:mimeType="image/*" />
+                <data android:mimeType="application/*" />
+                <data android:mimeType="video/*" />
+                <data android:mimeType="audio/*" />
+            </intent-filter>
         </activity>
         <activity
-            android:name=".SubActivity"
-            android:label="@string/title_activity_sub" >
+            android:name=".HelpActivity"
+            android:label="@string/title_activity_sub">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
         <activity
-            android:name=".ThirdActivity"
+            android:name=".showDataActivity"
             android:label="@string/title_activity_third"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.android.material.MainActivity" />
+                android:value="com.srids.tagit.MainActivity" />
         </activity>
+        <activity
+            android:name=".SMSActivity"
+            android:label="SMS Activity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.srids.tagit.MainActivity" />
+        </activity>
+        <activity
+            android:name=".AddNotes"
+            android:label="Add Notes"
+            android:theme="@style/Theme.AppCompat.Dialog">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".AllCategories"
+            android:label="All Categories"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.srids.tagit.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".ClibBoardQRHandle"
+            android:label="ClibBoardQRHandle"
+            android:theme="@style/Theme.AppCompat.Dialog">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <receiver android:name=".TagItWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.srids.tagit.action.HANDLE_NOTES" />
+                <action android:name="com.srids.tagit.action.HANDLE_SMS" />
+                <action android:name="com.srids.tagit.action.HANDLE_CLIPBOARD" />
+                <action android:name="com.srids.tagit.action.HANDLE_QRCODE" />
+                <action android:name="com.srids.tagit.action.HANDLE_MAINACTIVITY" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/tagit_widget_provider" />
+        </receiver>
+
     </application>
 
 </manifest>

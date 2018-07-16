@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:focusable="true"
+    android:layout_gravity="center"
+    android:background="@android:color/transparent">
+
+    <ImageView
+        android:id="@+id/widget_image1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@+id/imgwidget1"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginLeft="2dp"
+        android:layout_gravity="center"/>
+
+    <ImageView
+        android:id="@+id/widget_text1"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:contentDescription="@+id/imgwidget1"
+        android:src="@mipmap/note1"
+        android:layout_marginLeft="2dp"
+        android:layout_gravity="center"/>
+
+    <ImageView
+        android:id="@+id/widget_text2"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:contentDescription="@+id/imgwidget1"
+        android:src="@mipmap/sms1"
+        android:layout_marginLeft="2dp"
+        android:layout_gravity="center"/>
+
+    <ImageView
+        android:id="@+id/widget_text3"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:contentDescription="@+id/imgwidget1"
+        android:src="@mipmap/clip1"
+        android:layout_marginLeft="2dp"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>

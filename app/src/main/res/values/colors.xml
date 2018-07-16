@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     
-    <color name="primaryColor">#FFEB3B</color>
-    <color name="primaryColorDark">#FBC02D</color>
+    <color name="primaryColor">#F44336</color>
+    <color name="primaryColorDark">#B71C1C</color>
 
-    <color name="primaryColorAccent">#50514F</color>
+    <color name="colorPrimary">#F44336</color>
+    <color name="colorPrimaryDark">#B71C1C</color>
 
-    <color name="colorSecondaryText">#50514F</color>
+    <color name="textColorPrimary">#000000</color>
+    <color name="primaryColorAccent">#FFFFFF</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="colorSecondaryText">#EDCB96</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+
+    <color name="drawerColor">#FFFFFF</color>
+
+    <color name="linkColor">#2a62e7</color>
+    <color name="textColor">#283593</color>
+    <color name="infoColor">#f4271b</color>
+    <color name="fileName">#704b3e</color>
+
+
+    <color name="colorFAB1">#B71C1C</color>
+    <color name="colorFAB2">#C62828</color>
 
 </resources>

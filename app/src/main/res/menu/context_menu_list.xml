@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   <item android:id="@+id/updateinfo"
+        android:title="@string/long_press_update"
+        android:icon="@mipmap/ic_mode_edit_black_24dp"/>
+
+    <item android:id="@+id/delete"
+        android:title="@string/long_press_delete"
+        android:icon="@mipmap/ic_delete_black_24dp"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/moverowdata"
+        android:title="@string/long_press_move"
+        android:icon="@mipmap/ic_send_black_24dp"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/copytoclipboard"
+        android:title="@string/long_press_copytoclip"
+        android:icon="@mipmap/ic_content_copy_black_24dp"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/tagtype"
+        android:title="@string/long_press_tagtype"
+        app:showAsAction="never"/>
+</menu>

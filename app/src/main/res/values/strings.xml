@@ -1,16 +1,44 @@
 <resources>
-    <string name="app_name">Material</string>
+    <string name="app_name">Tag It</string>
     <string name="title_activity_main">MainActivity</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="action_next">Next</string>
+    <string name="action_help">Help</string>
+    <string name="showhidelocation">Show location</string>
+    <string name="action_add">Add</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_paste">clipboardpaste</string>
+    <string name="rate_app">Rate this app</string>
     <string name="title_activity_sub">SubActivity</string>
+
     <string name="drawer_open">Open</string>
     <string name="drawer_close">Close</string>
 
+    <string name="long_press_open">Open</string>
+    <string name="long_press_delete">Delete</string>
+    <string name="long_press_update">Update</string>
+    <string name="long_press_move">Move</string>
+    <string name="long_press_copytoclip">Copy to clipboard</string>
+    <string name="long_press_tagtype">Change Tag type</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title_activity_third">ThirdActivity</string>
+    <string name="title_activity_third">showDataActivity</string>
+    <string name="password_dialog_title">Enter pin to unlock</string>
+    <string name="title_activity_login">Enter Pin</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="vertical_ellipsis">&#8942;</string>
+
 </resources>

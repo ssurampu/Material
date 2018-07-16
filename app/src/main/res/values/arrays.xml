@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="smssave_chooser">
+        <item>Tag as reference</item>
+        <item>Copy sms content</item>
+    </string-array>
+</resources>

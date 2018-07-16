@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        card_view:cardCornerRadius="4dp"
+        android:id="@+id/cv">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:background="@drawable/rowbackground_selector"
+            android:descendantFocusability="afterDescendants">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="left">
+                    <!-- Thumbnail Image -->
+                    <com.srids.tagit.RoundedImageView
+                        android:id="@+id/thumbnail"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_alignParentLeft="true"
+                        android:src="@mipmap/ic_arrow_forward_black_24dp" />
+                    <TextView
+                        android:id="@+id/episode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="8dp"
+                        android:layout_gravity="center"
+                        android:text="hi" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_data"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingRight="3dp">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/thumbnail"
+                    android:layout_toRightOf="@+id/thumbnail"
+                    android:singleLine="false"
+                    android:maxLines="1"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/filename"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title"
+                    android:layout_toRightOf="@+id/thumbnail"
+                    android:singleLine="false"
+                    android:layout_marginTop="1dip" />
+
+                <TextView
+                    android:id="@+id/subtitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="false"
+                    android:textSize="@dimen/abc_text_size_small_material"
+                    android:layout_marginTop="1dip" />
+                <TextView
+                    android:id="@+id/options"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:text="@string/vertical_ellipsis" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/notes_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Info"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="left" />
+
+    <EditText
+        android:id="@+id/notes_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:maxLength="50"
+        android:textStyle="bold"
+        android:layout_marginTop="2dp"/>
+
+    <TextView
+        android:id="@+id/notes_title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Note"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="left" />
+
+    <ScrollView
+        android:id="@+id/scview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp">
+
+        <EditText
+            android:id="@+id/addnotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="12"
+            android:maxLength="300"/>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/notes_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"/>
+
+    <TextView
+        android:id="@+id/notes_title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Category"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="left" />
+
+    <Spinner
+        android:id="@+id/spinnerCategory"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_buttons"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ok" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel" />
+
+    </LinearLayout>
+
+</LinearLayout>

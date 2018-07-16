@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="10dp"
+    android:descendantFocusability="beforeDescendants">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:paddingLeft="3dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:paddingRight="3dp"
+        android:background="@drawable/rowbackground_selector"
+        android:descendantFocusability="afterDescendants">
+
+        <TextView
+            android:id="@+id/smsNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hi"
+            android:textAllCaps="true"
+            android:textSize="@dimen/title"
+            android:textStyle="bold|italic"
+            android:layout_marginBottom="2dp"
+            android:textColor="#324430"/>
+
+        <TextView
+            android:id="@+id/smsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hi hi"
+            android:textColor="#324430"/>
+
+    </LinearLayout>
+
+</FrameLayout>
